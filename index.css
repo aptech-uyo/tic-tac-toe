@@ -1,4 +1,69 @@
+html{
+  box-sizing: content-box;
+}
+
 #game-grid button {
-  width: 5vw;
-  height: 5vw;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  color: darkblue;
+  font-size: x-large;
+}
+
+#game-grid td {
+  border: blueviolet dashed;
+  height: 150px;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  margin: auto;
+}
+
+main.gameboard{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  vertical-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  margin: auto;
+  background-color: yellow;
+}
+
+#first td:nth-child(even){
+  background-color: mediumaquamarine;
+}
+
+#second td:nth-child(odd){
+  background-color: mediumaquamarine;
+}
+
+#third td:nth-child(even){
+  background-color: mediumaquamarine;
+}
+
+#win{
+  text-align: center;
+  font-size: x-large;
+  color: darkblue;
+}
+
+#replay-button{
+  background-color: darkblue;
+  color: yellow;
+  width: 150px;
+  height: 30px;
+  display: block;
+  border-radius: 5px;
+  border: medium;
 }

@@ -3,35 +3,35 @@
   <head>
     <title>Tic-Tac-Toe</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <div>
-      <table id="game-grid">
-        <tr>
-          <td><button></button></td>
-          <td><button></button></td>
-          <td><button></button></td>
-        </tr>
-        <tr>
-          <td><button></button></td>
-          <td><button></button></td>
-          <td><button></button></td>
-        </tr>
-        <tr>
-          <td><button></button></td>
-          <td><button></button></td>
-          <td><button></button></td>
-        </tr>
-      </table>
-    </div>
-    <div>
-      <!-- Winner message -->
-      <p></p>
-    </div>
-    <div>
-      <button type="reset" id="replay-button">Replay</button>
-    </div>
+    <main class="gameboard">
+      <div class="">
+        <table id="game-grid">
+          <tr id="first">
+            <td><button></button></td>
+            <td><button></button></td>
+            <td><button></button></td>
+          </tr>
+          <tr id="second">
+            <td><button></button></td>
+            <td><button></button></td>
+            <td><button></button></td>
+          </tr>
+          <tr id="third">
+            <td><button></button></td>
+            <td><button></button></td>
+            <td><button></button></td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <p class="winner" id="win"></p>
+        <button type="reset" id="replay-button">Replay</button>
+      </div>
+    </main>
   </body>
   <script src="index.js"></script>
 </html>
