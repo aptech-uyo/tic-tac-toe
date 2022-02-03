@@ -2,35 +2,70 @@
 <html>
   <head>
     <title>Tic-Tac-Toe</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div>
+    <div id="main">
+      <h1>TIC TAC TOE</h1>
+
+      <!-- Game Instructions -->
+      <p id="ins">
+        Game starts by just Tap on box<br /><br />First Player starts as
+        <b>Player X</b><br />And<br />Second Player as <b>Player 0</b>
+      </p>
+
+      <br /><br />
+
       <table id="game-grid">
-        <tr>
-          <td><button></button></td>
-          <td><button></button></td>
-          <td><button></button></td>
-        </tr>
-        <tr>
-          <td><button></button></td>
-          <td><button></button></td>
-          <td><button></button></td>
-        </tr>
-        <tr>
-          <td><button></button></td>
-          <td><button></button></td>
-          <td><button></button></td>
+        <tr class="row">
+          <td>
+            <input type="text" class="b1" onclick="box_1(); playMove();" />
+          </td>
+
+          <td>
+            <input type="text" class="b2" onclick="box_2(); playMove();" />
+          </td>
+
+          <td>
+            <input type="text" class="b3" onclick="box_3(); playMove();" />
+          </td>
+          <br /><br />
+
+          <td>
+            <input type="text" class="b4" onclick="box_4(); playMove();" />
+          </td>
+
+          <td>
+            <input type="text" class="b5" onclick="box_5(); playMove();" />
+          </td>
+
+          <td>
+            <input type="text" class="b6" onclick="box_6(); playMove();" />
+          </td>
+          <br /><br />
+
+          <td>
+            <input type="text" class="b7" onclick="box_7(); playMove();" />
+          </td>
+
+          <td>
+            <input type="text" class="b8" onclick="box_8();playMove();" />
+          </td>
+
+          <td>
+            <input type="text" class="b9" onclick="box_9();playMove();" />
+          </td>
         </tr>
       </table>
-    </div>
-    <div>
-      <!-- Winner message -->
-      <p></p>
-    </div>
-    <div>
-      <button type="reset" id="replay-button">Replay</button>
+      <!-- Grid end here -->
+      <br /><br /><br />
+      <!-- Button to reset game -->
+      <button class="but" onclick="reset()">RESET</button>
+
+      <br /><br />
+      <!-- Space to show player turn -->
+      <p class="message"></p>
     </div>
   </body>
   <script src="index.js"></script>
